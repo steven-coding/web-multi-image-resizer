@@ -33,6 +33,7 @@ export function initDropzone(onFiles) {
 
   dropzone.addEventListener('drop', (e) => {
     e.preventDefault();
+    e.stopPropagation();
     dropzone.classList.remove('drag-over');
     const files = [...e.dataTransfer.files].filter((f) => f.type.startsWith('image/'));
     if (files.length > 0) onFiles(files);
