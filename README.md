@@ -26,6 +26,12 @@ npm run dev
 
 The Vite dev server will start and open the app at `http://localhost:5173`.
 
+### Browser Compatibility
+
+**Recommended:** Chrome, Edge, or Safari.
+
+**Note:** Browsers with strict fingerprinting protection (e.g., Brave, Firefox with Enhanced Tracking Protection) may block the image processing library (Pica). If you encounter errors during processing, either use Chrome/Edge or disable fingerprinting protection for localhost in your browser settings.
+
 ### Production Build
 
 ```bash
